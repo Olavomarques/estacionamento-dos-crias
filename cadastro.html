@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Veículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Veículo</h1>
+    <a href="index.html" class="fechar">× Voltar</a>
+  </header>
+
+  <main>
+    <form id="formCadastro">
+      <label>Placa:</label>
+      <input type="text" id="placa" required placeholder="AAA0000">
+      
+      <label>Entrada:</label>
+      <input type="datetime-local" id="entrada" required>
+      
+      <label>Saída:</label>
+      <input type="datetime-local" id="saida" required>
+      
+      <label>Valor Hora:</label>
+      <input type="number" id="valorHora" required value="10">
+      
+      <div class="botoes">
+        <button type="submit" class="btn">Salvar</button>
+        <a href="index.html" class="btn-cancelar">Cancelar</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
